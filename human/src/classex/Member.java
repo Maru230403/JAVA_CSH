@@ -1,5 +1,5 @@
-package classex;
-//dto(data transfer dbject) vo(value object)
+ package classex;
+//dto(data transfer object) vo(value object)
 public class Member {
 	private String id;			// 단일 값
 	private String pwd;
