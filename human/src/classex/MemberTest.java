@@ -3,6 +3,8 @@ package classex;
 import java.util.Scanner;
 
 public class MemberTest {
+	private static String email;
+
 	// 속성,메소드
 	public static void main(String[] args) {
 //		Member member = new Member();	// 객체는 유일성(하나밖에 없다)
@@ -36,7 +38,7 @@ public class MemberTest {
 		System.out.print("PWD:");
 		String pwd =sc.next();
 		// 입력후 Member클래스의 생성자 메소드(==setXXXX())로 전달하여 출력한다
-		Member member = new Member(id,pwd);
+		Member member = new Member(id,pwd,email);
 		String id2 = member.getId();	//String id2="java";
 		String pwd2 = member.getPwd();
 		System.out.println("ID:"+id2 + " PWD:"+pwd2);

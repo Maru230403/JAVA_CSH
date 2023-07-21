@@ -1,9 +1,7 @@
 package classex;
 
-import java.util.Scanner;
 
 public class MemberMain {
-	static Scanner sc = new Scanner(System.in);
 	
 	public static void showMenu() {
 			System.out.println("1.회원입력\n2.회원조회\n3.회원삭제\n4.회원변경\n5.전체조회\n6.종료");
@@ -11,30 +9,34 @@ public class MemberMain {
 		}
 	
 	public static void main(String[] args) {
+		MemberService ms = new  MemberService();
 		int sel=0;
 		while (true) {
 			showMenu();
-			sel = sc.nextInt();
+			sel = InputScanner.sc.nextInt();
 		switch (sel) {
 		case 1: 
-			MemberService.inputData();
+			ms.inputData();
 			break;
 		case 2: 
-			 MemberService.searchData();
+				System.out.println("회원조회");
+				ms.searchData();
 			break;
 		case 3: 
-			MemberService.deleteData();
+			System.out.println("회원삭제");
+			ms.deleteData();
 			break;
 		case 4:
-			MemberService.updateData();
+			System.out.println("회원변경");
+			ms.updateData();
 			break;
 		case 5: 
-			MemberService.totalPrint();
+			System.out.println("전체조회");
+			ms.totalPrint();
 			break;
 		case 6:
 			System.out.println("프로그램을 종료함");
 			System.exit(0);
-			sc.close();
 		}
 		}
 	}

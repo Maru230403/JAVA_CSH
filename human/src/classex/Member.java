@@ -11,9 +11,10 @@ public class Member {
 	public Member() {			// overloading
 		//반환타입이 없다
 	}
-	public Member(String id, String pwd) {	// 데이터 타입이 같고 개수가 같으면 에러 ex) String이 2개 밑에는 3개면 쓸수 있지만 2개 2개면 못씀
+	public Member(String id, String pwd,String email) {	// 데이터 타입이 같고 개수가 같으면 에러 ex) String이 2개 밑에는 3개면 쓸수 있지만 2개 2개면 못씀
 		this.id = id;						// 무조건 데이터 타입을 봐라 ex) String,String 밑줄 String,int면 가능 
 		this.pwd = pwd;
+		this.email=email;
 	}
 
 	public Member(String id, String name, String email,Address addr) {
@@ -50,9 +51,18 @@ public class Member {
 	}
 	@Override
 	public String toString() {
-		return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", address=" + address
-				+ "]";
+		return "Member [id=" + id + ", pwd=" + pwd + ", email=" + email + "]";
 	}
+	public void printMember() {
+		System.out.println("ID :"+ id);
+		System.out.println("PWD :"+ pwd);
+		System.out.println("Email :"+ email);
+	}
+//	@Override
+//	public String toString() {
+//		return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", address=" + address
+//				+ "]";
+//	}
 
 }
 // member는 주소를 가진다
