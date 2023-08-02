@@ -1,4 +1,4 @@
-package Day16_상속예제2.protected접근제한자;
+package Day16.상속예제2.protected접근제한자;
 import Day16_상속예제.protected접근제한자.A;
 public class D extends A {
 	public D() {
