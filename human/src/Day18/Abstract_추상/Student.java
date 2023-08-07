@@ -18,7 +18,7 @@ public abstract class Student {
 		System.out.println("Student 클래스의 getStudInfo() 메소드 호출");
 		return "이름은 :" + name + ", 학년은" + grade;
 		
-		public abstract String getTeacher(); // 학생 담당 선생님 이름을 구하는 추상 메소드
+//		public abstract String getTeacher(); // 학생 담당 선생님 이름을 구하는 추상 메소드
 			
 	}
 	

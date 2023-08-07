@@ -17,8 +17,8 @@ public  class Student {
 		System.out.println("Student 클래스의 getStudInfo() 메소드 호출");
 		return "이름은 :" + name + ", 학년은" + grade;
 		
-		public  String getTeacher()
-		return "김길동 선생님";// 학생 담당 선생님 이름을 구하는 메소드
+//		public  String getTeacher()
+//		return "김길동 선생님";// 학생 담당 선생님 이름을 구하는 메소드
 			
 	}
 	

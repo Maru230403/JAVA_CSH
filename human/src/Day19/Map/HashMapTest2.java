@@ -7,7 +7,7 @@ public class HashMapTest2 {
 		Map map = new HashMap();
 		map.put("first", new Integer(100));
 		map.put("second", "Hello World!!");
-		map.put("third", new MyStudent());
+//		map.put("third", new MyStudent());
 		map.put("fourth", null);
 		Set set = map.keySet(); //모든 키를 가지고 온다.
 		Collection col = map.values(); // 모든 값을 가지고 온다.

@@ -22,8 +22,8 @@ public class HashMapExample01 {
 		Set<String> keySet = map.keySet();
 		Iterator<String> keyIterator = keySet.iterator();
 		while(keyIterator.hasNext()) {
-			Integer value = map.get(key);
-			System.out.println("\t" + key + " : " + value);
+//			Integer value = map.get(key);
+//			System.out.println("\t" + key + " : " + value);
 		}
 		System.out.println();
 		

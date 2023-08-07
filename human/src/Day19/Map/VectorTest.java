@@ -12,7 +12,7 @@ public class VectorTest {
 		v.addElement(new Integer(123));
 		v.addElement("홍길동");
 		v.addElement(new Integer(123));
-		v.addElement(new MyStudent());
+//		v.addElement(new MyStudent());
 		/* *
 		 * for(int i = 0; i < v.size(); i++){
 		 * 	System.out.println(v.get(i));
